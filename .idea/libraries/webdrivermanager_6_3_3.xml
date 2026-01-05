@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="webdrivermanager-6.3.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FrameWork/libraries/webdrivermanager-6.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
