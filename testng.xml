@@ -4,12 +4,12 @@
 <suite name="nopcommerce" verbose="1">
     <parameter name="server" value="Local"/>
     <parameter name="userUrl" value="http://localhost/wordpress/#"/>
-    <parameter name="adminUrl" value="http://localhost/wordpress/wp-admin/"/>
+    <parameter name="adminUrl" value="http://localhost/orangehrm/orangehrm-5.8/web/index.php/auth/login"/>
 
     <test name="Run on Chrome">
         <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="TestNG.Level_09_Switch_Site"/>
+            <class name="TestNG.Add_Employee"/>
         </classes>
     </test>
 
