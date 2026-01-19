@@ -1,5 +1,6 @@
 package pageObject.OrangeHRM.AdminPO;
 
+import interfaces.OrangeHRM.AdminUI.HRMAdminHeaderPageUI;
 import interfaces.OrangeHRM.AdminUI.HRMAdminPIMPageUI;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -78,5 +79,10 @@ public class HRMAdminPIMPO extends HRMAdminSidebarPO {
 
     public String valueContentMessage() {
         return getTextElement(driver, HRMAdminPIMPageUI.ADD_EMPLOYEE_TOAST_MESSAGE_CONTENT);
+    }
+
+    public void clickToProfile() {
+        waitForElementClickable(driver, HRMAdminHeaderPageUI.HEADER_PROFILE_DROPDOWN);
+        clickToElement(driver, HRMAdminHeaderPageUI.HEADER_PROFILE_DROPDOWN);
     }
 }

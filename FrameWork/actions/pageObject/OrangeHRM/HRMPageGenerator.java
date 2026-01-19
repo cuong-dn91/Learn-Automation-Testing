@@ -5,12 +5,13 @@ import pageObject.AddressPageObject;
 import pageObject.HomePageObject;
 import pageObject.LoginPageObject;
 import pageObject.MyAccountPageObject;
-import pageObject.OrangeHRM.AdminPO.AdminAddPostPO;
-import pageObject.OrangeHRM.AdminPO.AdminDashboardPO;
-import pageObject.OrangeHRM.AdminPO.AdminLoginPO;
+import pageObject.OrangeHRM.AdminPO.HRMAdminDashboardPO;
+import pageObject.OrangeHRM.AdminPO.HRMAdminLoginPO;
+import pageObject.OrangeHRM.AdminPO.HRMAdminMyInfoPO;
+import pageObject.OrangeHRM.AdminPO.HRMAdminPIMPO;
 import pageObject.OrangeHRM.UserPO.UserHomepagePO;
 
-public class PageGenerator{
+public class HRMPageGenerator {
     public static AddressPageObject getAddressPage (WebDriver driver) {
         return new AddressPageObject(driver);
     }
@@ -31,15 +32,19 @@ public class PageGenerator{
         return new UserHomepagePO(driver);
     }
 
-    public static AdminLoginPO getAdminLoginPage(WebDriver driver) {
-        return new AdminLoginPO(driver);
+    public static HRMAdminLoginPO getAdminLoginPage(WebDriver driver) {
+        return new HRMAdminLoginPO(driver);
     }
 
-    public static AdminDashboardPO getAdminDashboardPage(WebDriver driver) {
-        return new AdminDashboardPO(driver);
+    public static HRMAdminDashboardPO getAdminDashboardPage(WebDriver driver) {
+        return new HRMAdminDashboardPO(driver);
     }
 
-    public static AdminAddPostPO getAdminAddPostPage(WebDriver driver) {
-        return new AdminAddPostPO(driver);
+    public static HRMAdminPIMPO getAdminPIMPage(WebDriver driver) {
+        return new HRMAdminPIMPO(driver);
+    }
+
+    public static HRMAdminMyInfoPO getMyInfoPage(WebDriver driver) {
+        return new HRMAdminMyInfoPO(driver);
     }
 }
